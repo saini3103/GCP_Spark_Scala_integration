@@ -7,6 +7,11 @@ It Include :-
 - Loading the data from GCP - Bigquery to Spark Dataframe.
 - Writing the resultant Spark Dataframe to Gcp - Bucket.
 - Writing the resultant Spark Dataframe to Gcp - Bigquery.
+- Spark Version = **3.3.2**
+- Scala Version = **2.12.18**
+
+### Dependency required:- 
+- Click on this [link]([url](https://drive.google.com/file/d/1HcZ0Cz4uTfDOQPkvoS50O2qQlyw03R0z/view?usp=sharing)) to download the dependency jar.
 
 >[!TIP] 
 >How to install:
