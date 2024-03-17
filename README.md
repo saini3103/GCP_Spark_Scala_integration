@@ -10,8 +10,10 @@ It Include :-
 - Spark Version = **3.3.2**
 - Scala Version = **2.12.18**
 
-### Dependency required:- 
-- Click on this [link]([url](https://drive.google.com/file/d/1HcZ0Cz4uTfDOQPkvoS50O2qQlyw03R0z/view?usp=sharing)) to download the dependency jar.
+> [!IMPORTANT]
+> Dependency required:- 
+- Click on this [link](https://drive.google.com/file/d/1HcZ0Cz4uTfDOQPkvoS50O2qQlyw03R0z/view?usp=sharing) to download the dependency jar.
+- Or search the dependency on maven repository. Click [here](https://mvnrepository.com/artifact/com.google.cloud.spark/spark-bigquery-with-dependencies_2.12/0.37.0) for reference.
 
 >[!TIP] 
 >How to install:
