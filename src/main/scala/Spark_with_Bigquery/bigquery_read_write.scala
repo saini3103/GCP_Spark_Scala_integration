@@ -28,7 +28,7 @@ object bigquery_read_write extends App{
   println("\nThe loaded table look like this :\n")
   orders.show(5,false)
 
-  val tmpBucket = "dataproc-staging-asia-east1-6154883603-4xpkqwfb"
+  val tmpBucket = "dataproc-temp-asia-east1-6154883603-3rdbdx7m"
 
   spark.conf.set("temperoryGcsBucket",tmpBucket)
 
