@@ -18,6 +18,6 @@ object bigquery_table_read extends App{
     .enableHiveSupport()
     .getOrCreate()
 
-  val
+
 
 }
