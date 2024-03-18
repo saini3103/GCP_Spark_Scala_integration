@@ -9,7 +9,7 @@ object bigquery_read_write extends App{
 
   val sparkConf = new SparkConf()
   sparkConf.set("spark.app.name","Read Bigquery Table in Spark")
-  //sparkConf.set("master","local[*]")
+  //sparkConf.set("master","yarn")
 
   val spark = SparkSession
     .builder()
@@ -30,7 +30,7 @@ object bigquery_read_write extends App{
 
   val tmpBucket = "dataproc-temp-asia-east1-6154883603-3rdbdx7m"
 
-  spark.conf.set("temperoryGcsBucket",tmpBucket)
+  spark.conf.set("temporaryGcsBucket", tmpBucket)
 
   val projectId = "ascendant-yeti-416817"
   val datasetId = "raw_data"
@@ -45,8 +45,3 @@ object bigquery_read_write extends App{
 
   spark.stop()
 }
-
-// spark-submit --class bigquery_spark.bigquery_read_write --master yarn --jars=gs://spark-jobs2024/dependencies_jar/spark-bigquery-with-dependencies_2.12-0.21.1.jar gs://spark-jobs2024/18032024_jobs/GCP_Spark_Scala_integration.jar
-
-
-

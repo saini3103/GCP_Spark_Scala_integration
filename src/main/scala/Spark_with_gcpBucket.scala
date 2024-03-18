@@ -36,4 +36,5 @@ object Spark_with_gcpBucket extends App {
     .mode(SaveMode.Overwrite)
     .parquet("gs://output3103/myWriteTest")
 
+spark.stop()
 }
