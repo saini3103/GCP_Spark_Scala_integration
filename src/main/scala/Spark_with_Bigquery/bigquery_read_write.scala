@@ -1,5 +1,4 @@
 package Spark_with_Bigquery
-
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.{SaveMode, SparkSession}
@@ -40,7 +39,7 @@ object bigquery_read_write extends App{
     .format("bigquery")
     .option("project",projectId)
     .option("dataset",datasetId)
-    .option("table","order_write2")
+    .option("table","ascendant-yeti-416817.raw_data.order_write2")
     .mode(SaveMode.Append)
     .save()
 
