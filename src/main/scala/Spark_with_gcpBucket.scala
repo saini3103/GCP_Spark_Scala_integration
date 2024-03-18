@@ -33,7 +33,7 @@ object Spark_with_gcpBucket extends App {
   println("\n Writing the Dataframe into GCS Bucket \n")
 
      customers.write
-    .mode(SaveMode.Append)
-    .parquet("output3103")
+    .mode(SaveMode.Overwrite)
+    .parquet("gs://output3103/myWriteTest")
 
 }
